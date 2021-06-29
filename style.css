@@ -1,0 +1,188 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --border-radius: 8px;
+    --box-shadow-lite: 2px 2px 6px 1px rgba(153, 153, 153, 0.7);
+    --box-shadow-dark: 2px 4px 12px 2px rgba(118, 118, 118, 0.5);
+    --transition: all 0.3s linear;
+}
+.list-center{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 79vh;
+    width: 100vw;
+    margin-top: 5rem;
+    grid-template-rows: 1fr 1fr;
+}
+.list-center h3{
+    font-size: 40px;
+}
+.list-container{
+    height: 700px;
+    width:600px;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    box-shadow: 4px 11px 12px 5px rgba(118, 118, 118, 0.5);
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+    grid-template-rows: auto 1fr;
+}
+.list-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-form input{
+    padding: 0.55rem 1rem;
+    width: 75%;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+}
+.add-item{
+    width: 6.5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    gap: 0 0.3rem;
+    background-color: green;
+    color: whitesmoke;
+    border: transparent;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-lite);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.add-item:hover{
+    background-color: orange;
+}
+.add-item i{
+    font-size: 22px;
+}
+.update-item{
+    text-transform: capitalize;
+    width: 6.5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    gap: 0 0.3rem;
+    background-color: green;
+    color: whitesmoke;
+    border: transparent;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-lite);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.update-item:hover{
+    background-color: orange;
+}
+.update-item i{
+    font-size: 22px;
+}
+.todos{
+    height: 80%;
+    width: 100%;
+    overflow: scroll;
+}
+.todo{
+    display: flex;
+    width: 95%;
+    /* border: 1px solid rgba(36, 36, 36, 0.3); */
+    border-radius: var(--border-radius);
+    justify-content: space-around;
+    box-shadow: var(--box-shadow-lite);
+    padding: 0.85rem 1rem;
+    margin: 0.5rem 0;
+    transition: var(--transition);
+}
+.todo:hover{
+    transform: translateY(-5%);
+    box-shadow: var(--box-shadow-dark);
+    background-color: rgb(245, 139, 0);
+}
+.todo div, .todo button{
+    transition: var(--transition);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.todo:hover div{
+    color: rgb(235, 248, 188);
+}
+.todo:hover button{
+    background-color: rgb(245, 139, 0);
+}
+.todo-title{
+    font-size: 18px;
+    width: 88%;
+    margin-top: 0.5rem;
+    margin-left: -5rem;
+    color: rgb(0, 22, 51);
+    letter-spacing: 1.75px;
+}
+.todo-title h4{
+    margin-left: 3rem;
+}
+.todo button{
+    border: transparent;
+    font-size: 32px;
+    cursor: pointer;
+}
+.todo button i{
+    transition: var(--transition);
+}
+.todo button i:hover{
+    transform: rotate(360deg);
+    color: rgb(55, 37, 0);
+}
+.todo-update{
+    color: green;
+}
+.todo-update:hover{
+}
+.todo-delete{
+    color: red;
+}
+
+.delete-all-container{
+    width: 100%;
+    height: 3rem;
+    display: none;
+}
+.delete-all{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: black;
+    color: rgb(255, 89, 0);
+    transition: var(--transition);
+    border: transparent;
+    box-shadow: var(--box-shadow-dark);
+}
+.delete-all:hover{
+    background-color: rgb(255, 145, 0);
+    color: black;
+    cursor: pointer;
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}

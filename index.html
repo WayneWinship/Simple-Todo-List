@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="list-center">
+        <h3>Memo List</h3>
+        <div class="list-container">
+            <form class="list-form">
+                <!-- <label for="input">name</label> -->
+                <input type="text" name="text" placeholder="Memo item..">
+                <button type="submit" class="add-item">
+                    <p>Add</p><i class="fas fa-plus"></i>
+                </button>
+                <button type="submit" class="update-item hide">
+                    <p>update</p><i class="fas fa-pencil-alt"></i>
+                </button>
+            </form>
+            <div class="todos">
+                <!-- <div class="todo">
+                    <div class="todo-title">
+                        <h4>Learn React and JSX</h4>
+                    </div>
+                    <button class="todo-update">
+                        <i class="fas fa-wrench"></i>
+                    </button>
+                    <button class="todo-delete">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div> -->
+            </div>
+            <div class="delete-all-container">
+                <button type="submit" class="delete-all">remove all</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
